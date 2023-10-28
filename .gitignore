@@ -1,2 +1,5 @@
-# os system file
+# OS system file
 .DS_Store
+
+# Files from OCAT
+oldConfig.plist
