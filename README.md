@@ -1,7 +1,7 @@
 # OpenCore for HP EliteBook 840r G4
 
 <p align="center">
-  <img src="https://github.com/firedevel/Hackintosh-HP-EliteBook-840r-G4/blob/main/840r.png">
+  <img src="https://github.com/firedevel/Hackintosh-HP-EliteBook-840r-G4/blob/main/840r.jpg">
 </p>
 
 Forked from [HP-EliteBook-840-G5-Hackintosh](https://github.com/yusufklncc/HP-EliteBook-840-G5-Hackintosh)  
@@ -39,7 +39,7 @@ HDMI (Not tested)                   |  ⚠️
 Audio                               |  ✅  
 Ethernet                            |  ✅  
 Wi-Fi and Bluetooth                 |  ✅  
-USB 3.0 (Not tested)                |  ⚠️  
+USB 3.0                             |  ✅  
 Touchpad                            |  ✅  
 Battery status                      |  ✅  
 Camera                              |  ✅  
