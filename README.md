@@ -18,11 +18,9 @@ Wi-Fi             | Intel Wireless-AC 8265
 Ethernet          | Intel I219-V 
 Audio       | Conexant CX8200
 
-## Supported Versions
+## Supported Versions  
 
-- ⚠️ macOS Ventura - Sonoma
-  - Not tested
-- ✅ macOS Monterey 12
+- ✅ macOS Monterey - Sonoma
 - ⚠️ macOS High Sierra - Big Sur  
   - AirportItlwm.kext needs to be added manually
 - ❌ macOS High Sierra -
