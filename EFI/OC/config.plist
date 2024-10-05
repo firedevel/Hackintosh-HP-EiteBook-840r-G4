@@ -80,11 +80,11 @@
                 </dict>
                 <dict>
                     <key>Comment</key>
-                    <string>Fix the LED status of WLAN button</string>
+                    <string>Swap Cmd and Opt/Fix Lid Sleep</string>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>Path</key>
-                    <string>SSDT-WLED.aml</string>
+                    <string>SSDT-PS2K.aml</string>
                 </dict>
             </array>
             <key>Delete</key>
@@ -432,6 +432,8 @@
                 <true/>
                 <key>EnableWriteUnprotector</key>
                 <true/>
+                <key>FixupAppleEfiImages</key>
+                <false/>
                 <key>ForceBooterSignature</key>
                 <false/>
                 <key>ForceExitBootServices</key>
@@ -469,19 +471,11 @@
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
                 <dict>
-                    <key>AAPL,GfxYTile</key>
-                    <data>AQAAAA==</data>
                     <key>AAPL,ig-platform-id</key>
                     <data>AAAWWQ==</data>
-                    <key>device-id</key>
-                    <data>FlkAAA==</data>
-                    <key>enable-hdmi-dividers-fix</key>
-                    <data>AQAAAA==</data>
                     <key>enable-hdmi20</key>
                     <data>AQAAAA==</data>
                     <key>enable-lspcon-support</key>
-                    <data>AQAAAA==</data>
-                    <key>force-online</key>
                     <data>AQAAAA==</data>
                     <key>framebuffer-con0-alldata</key>
                     <data>AAASAAIAAACYAAAA</data>
@@ -499,12 +493,6 @@
                     <data>AQAAAA==</data>
                     <key>framebuffer-con2-has-lspcon</key>
                     <data>AQAAAA==</data>
-                    <key>framebuffer-fbmem</key>
-                    <data>AACQAA==</data>
-                    <key>framebuffer-patch-enable</key>
-                    <data>AQAAAA==</data>
-                    <key>framebuffer-stolenmem</key>
-                    <data>AAAwAQ==</data>
                     <key>hda-gfx</key>
                     <string>onboard-1</string>
                 </dict>
@@ -522,7 +510,7 @@
                     <key>BundlePath</key>
                     <string>Lilu.kext</string>
                     <key>Comment</key>
-                    <string>V1.6.4</string>
+                    <string>V1.6.8</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -540,7 +528,7 @@
                     <key>BundlePath</key>
                     <string>VirtualSMC.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.1 | [SMC] Apple SMC emulator</string>
+                    <string>V1.3.3 | [SMC] Apple SMC emulator</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -558,7 +546,7 @@
                     <key>BundlePath</key>
                     <string>SMCBatteryManager.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.1 | [Battery] a member of VirtualSMC that parses battery info.</string>
+                    <string>V1.3.3 | [Battery] a member of VirtualSMC that parses battery info.</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -576,7 +564,7 @@
                     <key>BundlePath</key>
                     <string>ECEnabler.kext</string>
                     <key>Comment</key>
-                    <string>V1.0.4 | [Battery] Allows reading EC fields over 1 byte long</string>
+                    <string>V1.0.5 | [Battery] Allows reading EC fields over 1 byte long</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -594,7 +582,7 @@
                     <key>BundlePath</key>
                     <string>SMCLightSensor.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.1 | [Processor] For power info of processor temperature.</string>
+                    <string>V1.3.3 | [Processor] For power info of processor temperature.</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -612,7 +600,7 @@
                     <key>BundlePath</key>
                     <string>SMCProcessor.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.1 | [Sensor] a member of VirtualSMC that activate light sensor.</string>
+                    <string>V1.3.3 | [Sensor] a member of VirtualSMC that activate light sensor.</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -630,7 +618,7 @@
                     <key>BundlePath</key>
                     <string>WhateverGreen.kext</string>
                     <key>Comment</key>
-                    <string>V1.6.4 | [Graphics] GPU Patch</string>
+                    <string>V1.6.7 | [Graphics] GPU Patch</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -648,7 +636,7 @@
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>V1.8.6 | [Audio] </string>
+                    <string>V1.9.1 | [Audio] </string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -666,7 +654,7 @@
                     <key>BundlePath</key>
                     <string>CPUFriend.kext</string>
                     <key>Comment</key>
-                    <string>V1.2.7 | [Processor] Adjust CPU performance</string>
+                    <string>V1.2.8 | [Processor] Adjust CPU performance</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -702,7 +690,7 @@
                     <key>BundlePath</key>
                     <string>RestrictEvents.kext</string>
                     <key>Comment</key>
-                    <string>V1.1.3</string>
+                    <string>V1.1.4</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -720,7 +708,7 @@
                     <key>BundlePath</key>
                     <string>NVMeFix.kext</string>
                     <key>Comment</key>
-                    <string>V1.1.0 | [SSD] Power management for 3rd-party NVMe devices</string>
+                    <string>V1.1.1 | [SSD] Power management for 3rd-party NVMe devices</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -936,7 +924,7 @@
                     <key>BundlePath</key>
                     <string>IntelBluetoothFirmware.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.0 | [Bluetooth] Intel Bluetooth</string>
+                    <string>V2.4.0 | [Bluetooth] Intel Bluetooth</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -972,7 +960,7 @@
                     <key>BundlePath</key>
                     <string>IntelBTPatcher.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.0</string>
+                    <string>V2.4.0</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -986,11 +974,11 @@
                 </dict>
                 <dict>
                     <key>Arch</key>
-                    <string>x86_64</string>
+                    <string>Any</string>
                     <key>BundlePath</key>
                     <string>IntelBluetoothInjector.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.0</string>
+                    <string>V2.4.0</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1068,9 +1056,27 @@
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/AirportItlwm</string>
                     <key>MaxKernel</key>
-                    <string>23.9.9</string>
+                    <string>23.3.9</string>
                     <key>MinKernel</key>
                     <string>23.0.0</string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>Sonoma4Itlwm.kext</string>
+                    <key>Comment</key>
+                    <string>V2.3.0</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/AirportItlwm</string>
+                    <key>MaxKernel</key>
+                    <string>23.9.9</string>
+                    <key>MinKernel</key>
+                    <string>23.4.0</string>
                     <key>PlistPath</key>
                     <string>Contents/Info.plist</string>
                 </dict>
@@ -1098,7 +1104,7 @@
                     <key>BundlePath</key>
                     <string>HibernationFixup.kext</string>
                     <key>Comment</key>
-                    <string>V1.4.8 | [Hibernate] Kexts for fixing S4 hibernation &amp; wakeup</string>
+                    <string>V1.5.1 | [Hibernate] Kexts for fixing S4 hibernation &amp; wakeup</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1116,7 +1122,7 @@
                     <key>BundlePath</key>
                     <string>FeatureUnlock.kext</string>
                     <key>Comment</key>
-                    <string>V1.1.5 | Unlock Sidecar and so on</string>
+                    <string>V1.1.6 | Unlock Sidecar and so on</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1281,7 +1287,7 @@
                 <key>HibernateMode</key>
                 <string>None</string>
                 <key>HibernateSkipsPicker</key>
-                <false/>
+                <true/>
                 <key>HideAuxiliary</key>
                 <true/>
                 <key>InstanceIdentifier</key>
@@ -1460,7 +1466,7 @@
                     <key>SystemAudioVolume</key>
                     <data>Rg==</data>
                     <key>boot-args</key>
-                    <string>-lilubetaall</string>
+                    <string></string>
                     <key>csr-active-config</key>
                     <data>AAAAAA==</data>
                     <key>prev-lang:kbd</key>

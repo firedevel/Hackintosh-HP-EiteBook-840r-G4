@@ -3,3 +3,9 @@
 
 # Files from OCAT
 oldConfig.plist
+
+# Theme resources
+EFI/OC/Resources
+
+# BOOT
+EFI/BOOT

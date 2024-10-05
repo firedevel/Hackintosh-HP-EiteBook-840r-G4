@@ -33,7 +33,7 @@ Type | Status
 Turbo boost and CPU frequency stage |  ✅  
 Intel HD Graphics                   |  ✅  
 Brightness control                  |  ✅  
-HDMI (Not tested)                   |  ⚠️  
+HDMI                                |  ✅  
 Audio                               |  ✅  
 Ethernet                            |  ✅  
 Wi-Fi and Bluetooth                 |  ✅  
@@ -43,7 +43,7 @@ Battery status                      |  ✅
 Camera                              |  ✅  
 Shutdown / Reboot                   |  ✅  
 Fn shortcut keys                    |  ✅  
-Realtek CardReader (Not tested)     |  ⚠️  
+Realtek CardReader                  |  ✅  
 S3 Sleep / Wake                     |  ✅  
 S4 Hibernation / Wake               |  ✅  
 
