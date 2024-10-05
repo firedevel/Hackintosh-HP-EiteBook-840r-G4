@@ -473,6 +473,8 @@
                 <dict>
                     <key>AAPL,ig-platform-id</key>
                     <data>AAAWWQ==</data>
+                    <key>device-id</key>
+                    <data>FlkAAA==</data>
                     <key>enable-hdmi20</key>
                     <data>AQAAAA==</data>
                     <key>enable-lspcon-support</key>
