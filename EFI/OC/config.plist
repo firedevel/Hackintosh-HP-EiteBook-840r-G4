@@ -1417,9 +1417,9 @@
                     <key>FullNvramAccess</key>
                     <true/>
                     <key>Name</key>
-                    <string>ResetNvramEntry</string>
+                    <string>CleanNvram</string>
                     <key>Path</key>
-                    <string>ResetNvramEntry.efi</string>
+                    <string>CleanNvram.efi</string>
                     <key>RealPath</key>
                     <true/>
                     <key>TextMode</key>
@@ -1471,7 +1471,6 @@
                 <key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
                 <array>
                     <string>boot-args</string>
-                    <string>csr-active-config</string>
                 </array>
             </dict>
             <key>LegacyOverwrite</key>
